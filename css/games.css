@@ -1,0 +1,9 @@
+#drawing {
+	/**/
+}
+
+li {
+	text-decoration: underline;
+	text-decoration-style: dotted;
+	margin-top: 0.5vh;
+}

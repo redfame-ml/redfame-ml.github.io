@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css?family=Lora|Open+Sans&display=swap');
+
+/* UI Layout */
+
+html {
+	background-color: rgb(255, 204, 183);
+	color: rgb(25, 20, 18);
+	display: table;
+	margin-top: 20vh;
+	transition: 0.5s margin-top;
+	transiton-delay: .1s; }
+div {
+	display: table-cell;
+	vertical-align: top; }
+
+#leftPane {
+	width: 45vw;
+	height: 80vh;
+	padding: 2.5vh 2.5vw;
+	font-family: 'Open Sans', Arial; }
+#rightPane {
+	padding: 2.5vh 2.5vw;
+	width: 45vw;
+	font-family: 'Open Sans', Arial; }
+#leftPane, #rightPane {
+	font-size: 3.5vmin; }
+#rightPane img, #rightPane canvas {
+	min-width: 100%;
+	max-width: 100%;
+		width: 100%;
+	display: block;
+	box-shadow: 0 0 1vh; }
+#rightPane canvas {
+	image-rendering: low-quality;
+	image-rendering: pixelated; 
+	image-rendering: optimize; 
+	image-rendering: speed;
+	image-rendering: fast; }
+
+/* Mobile Device Shit */
+
+@media (max-aspect-ratio: 1/1) {
+	html {
+		font-size: 150%; }
+}
+
+/* Header Management */
+
+#header {
+	background-color: rgb(254, 139, 90);
+	top: 0;
+	left: 0;
+	position: fixed;
+	width: 100vw;
+	height: 20vh;
+	box-shadow: 0 0.2vh 1vh;
+	transition: 0.5s height; }
+
+.scrolled #header {
+	height: 10vh; }
+.scrolled html {
+	margin-top: 10vh; }
