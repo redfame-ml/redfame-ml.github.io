@@ -7,3 +7,13 @@ li {
 	text-decoration-style: dotted;
 	margin-top: 0.5vh;
 }
+
+.incomplete {
+	opacity: 0.5;
+}
+.incomplete, .incomplete * {
+	cursor: not-allowed;
+}
+.incomplete::after {
+	content: " (incomplete)";
+}
