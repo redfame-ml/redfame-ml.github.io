@@ -1,3 +1,16 @@
 {
-	"": ""
+	"short_name": "redFame",
+	"name": "redFame | Drawings, Projects, and More!",
+	"icons": [
+		{
+			"src": "img/apple-icon.png",
+			"type": "image/png",
+			"sizes": "256x256"
+		}
+	],
+	"start_url": "/?source=pwa",
+	"background_color": "#ffccb7",
+	"theme_color": "#fe8b5a",
+	"display": "standalone",
+	"scope": "/"
 }
